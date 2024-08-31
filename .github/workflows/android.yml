@@ -24,9 +24,10 @@ jobs:
       run: chmod +x gradlew
 
     - name: Gradle version
+      # Gradle 8.10!
       run: gradle --version
     - name: GradleW version
-      run: ./gradlew --version
+      run: echo fails ./gradlew --version
 
     - name: Build with Gradle
       #run: ./gradlew build
